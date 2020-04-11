@@ -1,0 +1,25 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--c-grey-light);
+  height: 64px;
+}
+
+.list {
+  display: flex;
+}
+
+.link {
+  list-style: none;
+  margin: 0 2px;
+}
+
+.link > a:link,
+.link > a:visited {
+  color: black;
+}
+
+.link > a {
+  text-decoration: none;
+}

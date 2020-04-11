@@ -1,0 +1,33 @@
+.product-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: linear-gradient( bottom-left);
+  background: linear-gradient(to bottom left, white 0%, white 50%, var(--c-blue-light) 50%, var(--c-blue-light) 100%);
+  height: 100vh;
+}
+
+.product {
+  height: 50%;
+  width: 60%;
+  background-color: var(--c-grey-light);
+  display: flex;
+}
+
+.product-image {
+  flex: 1.5;
+}
+
+.product-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.product-content {
+  height: 100%;
+  flex: 2;
+}
+
+.product-add {
+
+}
