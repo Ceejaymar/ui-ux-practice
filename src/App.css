@@ -16,6 +16,7 @@ design system
 256px
 384px
 512px
+768px
 */
 
 :root {
@@ -33,6 +34,8 @@ design system
   --c-blue-dark: #10528c;
   --c-blue: #45a6fa;
   --c-blue-light: #bfe9f6;
+
+  --f-os: "Open sans, sans serif";
 }
 
 * {

@@ -2,31 +2,142 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom left, white 0%, white 50%, var(--c-blue-light) 50%, var(--c-blue-light) 100%);
+  /* background: linear-gradient(to bottom left, white 0%, white 50%, var(--c-blue-light) 50%, var(--c-blue-light) 100%); */
+  background-image: url(../images/background3.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
   height: 100vh;
 }
 
 .product {
   height: 50%;
   width: 60%;
-  background-color: var(--c-grey-light);
+  background-color: rgba(239, 239, 239, 0.6);
   display: flex;
+  border-radius: 24px;
 }
 
 .product-image {
   flex: 1.5;
+  min-width: 256px;
 }
 
 .product-image img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
+  border-radius: 24px 0 0 24px;
 }
 
 .product-content {
   height: 100%;
   flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 32px;
+}
+
+.product-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.product-price {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.product-desc {
+  font-size: 24px;
+  color: var(--c-grey-dark);
+}
+
+.button-container {
+  align-self: flex-end;
+}
+
+.product-fav,
+.product-add {
+  border: transparent;
+  font-weight: 600;
+  font-size: 20px; /* I had to use a font-size that wasn't in my design system. I felt like I needed a value in between 16px & 24px. */
+  cursor: pointer;
+}
+
+.product-fav {
+  border-bottom: 2px solid var(--c-blue);
+  background-color: transparent;
+  margin: 0 12px;
+  color: var(--c-blue);
+  font-weight: 600;
+}
+
+.product-fav:hover {
+  color: var(--c-blue-dark);
+  border-bottom: 2px solid var(--c-blue-dark);
 }
 
 .product-add {
+  margin: 0 12px;
+  padding: 12px 16px;
+  border-radius: 32px;
+  background-color: var(--c-blue);
+  color: var(--c-white);
+}
 
+.product-add:hover {
+  background-color: var(--c-blue-dark);
+}
+
+
+/*---- MEDIA QUERIES ----*/
+
+@media only screen and (max-width: 1024px) {
+  .product {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .product-section {
+    height: auto;
+    padding: 64px 0;
+  }
+
+  .product {
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .product-image {
+    height: 384px;
+  }
+
+  .product-image img {
+    border-radius: 24px 24px 0 0;
+  }
+
+  .product-title {
+    font-size: 24px;
+  }
+
+  .product-desc,
+  .product-price,
+  .product-stock {
+    padding: 12px 0;
+  }
+
+  .product-desc {
+    font-size: 16px;
+  }
+
+  .product-price {
+    font-size: 24px;
+  }
+
+  .product-fav,
+  .product-add {
+    font-size: 16px;
+  }
 }

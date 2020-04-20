@@ -10,16 +10,16 @@ const Product = () => {
         </div>
         <div className="product-content">
           <p className="product-title">
-            name: The Lonely Cactus
-          </p>
-          <p className="product-price">
-            price: $15
+            The Lonely Cactus
           </p>
           <p className="product-desc">
-            description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error minus quasi sed sunt voluptates quo?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error minus quasi sed sunt voluptates quo?
+          </p>
+          <p className="product-price">
+            $15
           </p>
           <p className="product-stock">
-            stock: 4
+            4 left in stock
           </p>
 
           <div className="button-container">

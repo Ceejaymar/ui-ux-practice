@@ -18,8 +18,6 @@ const Navbar = () => {
         <li className="link">
           <a href="/">Product</a>
         </li>
-
-
       </ul>
     </nav>
   );

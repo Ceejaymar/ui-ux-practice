@@ -4,6 +4,12 @@
   align-items: center;
   border-bottom: 1px solid var(--c-grey-light);
   height: 64px;
+  padding: 0 48px;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 24px;
 }
 
 .list {
@@ -12,7 +18,7 @@
 
 .link {
   list-style: none;
-  margin: 0 2px;
+  margin: 0 12px;
 }
 
 .link > a:link,
@@ -22,4 +28,18 @@
 
 .link > a {
   text-decoration: none;
+}
+
+/*---- MEDIA QUERIES ----*/
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 24px 0;
+    height: auto;
+  }
+
+  .list {
+    margin-top: 24px;
+  }
 }
